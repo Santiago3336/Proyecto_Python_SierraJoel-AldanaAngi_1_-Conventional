@@ -1,11 +1,7 @@
 {
-    "NodeJS": [
-        "Backend",
-        "Bases de datos",
-        "Programacio\u0301n formal",
-        "Programacio\u0301n Web",
-        "Fundamentos de programacio\u0301n"
+    "nodejs": [],
+    "java": [
+        "alo{"
     ],
-    "Java": [],
-    "NetCore": []
+    "netcore": []
 }

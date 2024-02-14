@@ -40,7 +40,7 @@ if Options == 'Agregar':
         
         pass
 elif Options == 'Actualizar':
-
+       
 
         pass
 else:
