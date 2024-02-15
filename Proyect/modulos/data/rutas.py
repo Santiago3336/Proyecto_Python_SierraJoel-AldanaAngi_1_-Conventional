@@ -4,7 +4,7 @@ def crearJsonRutas():
     datos = {
         "nodejs": [],
         "java": [],
-        "netcore": [],
+        "netcore": []
     }
     jsonData = json.dumps(datos, indent=4)
     rutaArchivo = "rutas.json"

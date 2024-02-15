@@ -1,0 +1,26 @@
+{
+    "Pedro": [
+        "Sputnik1",
+        "Sputnik3"
+    ],
+    "Jholver": [
+        "Artemis1",
+        "Artemis3"
+    ],
+    "Miguel": [
+        "Apolo1",
+        "Apolo3"
+    ],
+    "Garcia": [
+        "Sputnik2",
+        "Sputnik4"
+    ],
+    "Holguer": [
+        "Artemis2",
+        "Artemis4"
+    ],
+    "Efrain": [
+        "Apolo2",
+        "Apolo4"
+    ]
+}

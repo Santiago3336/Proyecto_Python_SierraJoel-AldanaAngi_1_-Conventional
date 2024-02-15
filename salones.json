@@ -1,0 +1,17 @@
+{
+    "Artemis": {
+        "trainer": "Nombre del entrenador de Artemis",
+        "Horario": "Horario de Artemis",
+        "Ruta": "Ruta de Artemis"
+    },
+    "Apolo": {
+        "trainer": "Nombre del entrenador de Apolo",
+        "Horario": "Horario de Apolo",
+        "Ruta": "Ruta de Apolo"
+    },
+    "Sputnik": {
+        "trainer": "Nombre del entrenador de Sputnik",
+        "Horario": "Horario de Sputnik",
+        "Ruta": "Ruta de Sputnik"
+    }
+}
