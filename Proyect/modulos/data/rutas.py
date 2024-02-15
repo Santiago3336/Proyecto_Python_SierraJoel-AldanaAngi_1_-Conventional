@@ -11,6 +11,7 @@ def crearJsonRutas():
     with open(rutaArchivo, 'w') as archivo:
         archivo.write(jsonData)
     return rutaArchivo
+
 jsonGeneracion = crearJsonRutas()
 
 def imprimirJsonRuta():
@@ -34,8 +35,8 @@ def agregarSubRuta(ruta_archivo, ruta, nuevo_item):
 def actualizarSubRutas(ruta_archivo):
     print("Que ruta deseas actualizar? (NodeJS, Java, NetCore)")
     imprimirJsonRuta()
-    ruta = input()
-    if ruta.lower() in ["nodejs", "java", "netcore"]:
+    ruta = input().lower()
+    if ruta in ["nodejs", "java", "netcore"]:
         with open(ruta_archivo, 'r') as f:
             json_data = json.load(f)
             print(f"Sub Rutas de {ruta}: {json_data[ruta]}")
@@ -43,7 +44,7 @@ def actualizarSubRutas(ruta_archivo):
                 print("¿Cual es el indice de la sub ruta que deseas editar?")
                 try:
                     indice = int(input())
-                    if indice >= 0 and indice < len(json_data[ruta]):
+                    if 0 <= indice < len(json_data[ruta]):
                         print(f"Sub ruta actual en el indice {indice}: {json_data[ruta][indice]}")
                         nueva_subRuta = input("ingrese la nueva subRuta: ")
                         json_data[ruta][indice] = nueva_subRuta
@@ -53,7 +54,7 @@ def actualizarSubRutas(ruta_archivo):
                     else:
                         print("Indice fuera de rango")
                 except ValueError:
-                    print("Porfavro, ingrese un numero valido")
+                    print("Porfavor, ingrese un numero valido")
             else:
                 print("No hay subrutas para editar en esta ruta")
     else:
@@ -66,8 +67,8 @@ def optionRutas():
         if answerR == 1:
             print("¿En qué ruta deseas agregar? (NodeJS, Java, NetCore)")
             imprimirJsonRuta()
-            answer_r = input()
-            if answer_r.lower() in ["nodejs", "java", "netcore"]:
+            answer_r = input().lower()
+            if answer_r in ["nodejs", "java", "netcore"]:
                 print("¿Cuántas sub rutas vas a ingresar?")
                 try:
                     num_rutas = int(input())
@@ -93,6 +94,8 @@ def optionRutas():
             with open(ruta_json, 'r') as j:
                 jsonDato = json.load(j)
                 print(json.dumps(jsonDato, indent=4))
+        elif answerR == 4:
+            imprimirJsonRuta()
         else:
             print("Opción no válida.")
     except ValueError:
@@ -101,5 +104,3 @@ def optionRutas():
 print("Actualmente manejamos 3 rutas principales:")
 imprimirJsonRuta()
 optionRutas()
-
-
